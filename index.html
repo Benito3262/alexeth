@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ALEX.ETH · Writer · Community</title>
+<meta name="description" content="Alex.eth (@alex_eth17). Web3 content writer, community builder, ambassador, and moderator. Open for paid work." />
+<meta property="og:image" content="assets/avatar.jpg" />
+<style>
+  :root { --bg:#070807; --card:#101410; --card2:#171d16; --line:#243024; --gold:#c6f54a; --gold2:#d8ff6a; --text:#f4ffe8; --mute:#c5d6b0; --soft:#7d9470; }
+  [data-theme="light"] { --bg:#f7fbea; --card:#fff; --card2:#eef6d8; --line:#d7e8b0; --gold:#4d7c0f; --gold2:#3f6212; --text:#14210a; --mute:#3f5428; --soft:#7d9470; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+  .wrap { width:min(1080px, calc(100% - 36px)); margin:0 auto; }
+  a { color:inherit; text-decoration:none; } img { display:block; max-width:100%; }
+  header { position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
+  .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+  .logo { letter-spacing:.16em; font-size:12px; color:var(--gold2); font-weight:700; }
+  nav { display:flex; gap:18px; align-items:center; font-size:13px; color:var(--mute); }
+  .tog { border:1px solid var(--line); background:transparent; color:var(--mute); border-radius:999px; padding:6px 12px; font-size:11px; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; }
+  .hero { display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; padding:72px 0 48px; }
+  .avail { color:var(--gold2); font-size:12px; letter-spacing:.16em; text-transform:uppercase; margin-bottom:18px; font-weight:700; }
+  h1 { font-size:clamp(48px, 8vw, 84px); font-weight:800; letter-spacing:-.05em; line-height:.88; margin-bottom:14px; }
+  .sub, .lead, .stat span, .card p, .work p { color:var(--mute); }
+  .sub { margin-bottom:22px; } .sub b { color:var(--gold2); }
+  .obj { max-width:560px; border-left:3px solid var(--gold); background:rgba(198,245,74,.08); padding:16px 18px; border-radius:0 12px 12px 0; }
+  .obj small { display:block; color:var(--gold2); letter-spacing:.14em; font-size:11px; text-transform:uppercase; margin-bottom:6px; font-weight:700; }
+  .row { display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
+  .btn { display:inline-flex; border-radius:999px; padding:11px 18px; font-size:14px; font-weight:600; border:1px solid var(--line); background:var(--card); }
+  .fill { background:var(--gold); color:#101408; border-color:var(--gold); }
+  .portrait, .stat, .card, .work { background:var(--card); border:1px solid var(--line); border-radius:18px; }
+  .portrait { padding:14px; border-radius:28px; }
+  .portrait img { width:100%; border-radius:20px; aspect-ratio:1; object-fit:cover; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .chip { font-size:12px; color:var(--gold2); border:1px solid var(--line); border-radius:999px; padding:6px 10px; font-weight:600; }
+  section { padding:28px 0 8px; }
+  .kicker { color:var(--gold2); letter-spacing:.14em; font-size:12px; font-weight:700; margin-bottom:8px; }
+  h2 { font-size:clamp(28px, 4vw, 40px); letter-spacing:-.04em; margin-bottom:12px; }
+  .lead { max-width:720px; margin-bottom:18px; }
+  .stats, .grid2, .grid3 { display:grid; gap:12px; }
+  .stats { grid-template-columns:repeat(3,1fr); } .grid2 { grid-template-columns:1fr 1fr; } .grid3 { grid-template-columns:repeat(3,1fr); }
+  .stat, .card, .work { padding:18px; }
+  .stat strong { display:block; font-size:28px; }
+  .work { margin-bottom:12px; }
+  .work a { color:var(--gold2); font-weight:600; font-size:13px; display:inline-block; margin-top:12px; }
+  .shot { border-radius:14px; border:1px solid var(--line); margin-top:12px; width:100%; }
+  .quote { margin:22px 0; padding:22px; border-radius:18px; background:var(--card2); border:1px solid var(--line); font-size:18px; }
+  .quote small { display:block; margin-top:8px; color:var(--mute); font-size:13px; }
+  .hire { text-align:center; padding:42px 0 64px; }
+  footer { border-top:1px solid var(--line); color:var(--soft); font-size:13px; display:flex; justify-content:space-between; padding:18px 0 28px; }
+  @media (max-width:800px) { .hero, .grid3, .grid2, .stats { grid-template-columns:1fr; } nav a { display:none; } }
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#top">ALEX.ETH</a><nav><a href="#work">Work</a><a href="#hire">Hire</a><button class="tog" id="theme" type="button">Light</button></nav></div></header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <p class="avail">Open for paid work</p>
+      <h1>ALEX.ETH</h1>
+      <p class="sub">Writer <b>·</b> Community <b>·</b> Ambassador</p>
+      <div class="obj"><small>// objective_</small>Complex crypto, written so a person can finish it. Then the room stays active.</div>
+      <div class="row"><a class="btn fill" href="https://x.com/alex_eth17" target="_blank" rel="noopener">DM on X</a><a class="btn" href="https://t.me/Alex_ethe" target="_blank" rel="noopener">Telegram</a></div>
+    </div>
+    <div class="portrait"><img src="assets/avatar.jpg" alt="Alex.eth" /><div class="chips"><span class="chip">@alex_eth17</span><span class="chip">3.0K on X</span><span class="chip">Zax · Onboard3 · VMCC</span></div></div>
+  </section>
+  <section>
+    <p class="kicker">// about_</p><h2>Who I am</h2>
+    <p class="lead">Web3 content writer and community builder. Research first, then a line people can repeat. Threads, moderation, ambassador seats, and Spaces.</p>
+    <p class="lead">Creator at Zax. Citizen at Onboard3. Builder at VMCC. Open for paid content, campaigns, and community roles.</p>
+    <div class="stats"><div class="stat"><strong>3.0K</strong><span>X followers</span></div><div class="stat"><strong>Top 4</strong><span>Safari thread contest</span></div><div class="stat"><strong>11.6K</strong><span>Views on the winners post</span></div></div>
+  </section>
+  <section>
+    <p class="kicker">// what you are hiring_</p><h2>What I offer</h2>
+    <div class="grid3">
+      <article class="card"><h3>Writing</h3><p>Threads, research, storytelling, and content strategy. The product, in a line that lands.</p></article>
+      <article class="card"><h3>Community</h3><p>Building, moderation, and growth. The room after the post.</p></article>
+      <article class="card"><h3>Campaigns</h3><p>Ambassador and KOL seats. Spaces when the conversation needs a voice.</p></article>
+    </div>
+  </section>
+  <section id="work">
+    <p class="kicker">// proof_</p><h2>Selected work</h2>
+    <article class="work">
+      <p class="kicker">SAFARIQ · TOP 4</p>
+      <h3>Thread contest shortlist</h3>
+      <p>@alex_eth17, one of four. $400 pool. The winners post has 201 likes and 11.6K views.</p>
+      <img class="shot" src="assets/safari.jpg" alt="Safari thread contest shortlist with alex_eth17" />
+      <a href="https://x.com/TeaonaX/status/2046939576661319949" target="_blank" rel="noopener">Open the announcement →</a>
+    </article>
+    <article class="work">
+      <p class="kicker">DARA · 5 OCT</p>
+      <h3>“A very good creative writer.”</h3>
+      <p>Public recommendation. Follow him and study the contests. 21 likes, 628 views.</p>
+      <img class="shot" src="assets/dara.jpg" alt="Dara recommending Alex as a creative writer" />
+      <a href="https://x.com/Oluwadarra/status/2107028384719188173" target="_blank" rel="noopener">Open the post →</a>
+    </article>
+    <div class="quote">“He’s really good at it.”<small>Dara, on the writing. The shortlist is the other receipt.</small></div>
+  </section>
+  <section class="hire" id="hire">
+    <p class="kicker">// let’s work_</p><h2>Open for paid work</h2>
+    <p class="lead">Content, community, or a campaign seat.</p>
+    <div class="row" style="justify-content:center"><a class="btn fill" href="https://x.com/alex_eth17">@alex_eth17</a><a class="btn" href="https://t.me/Alex_ethe">t.me/Alex_ethe</a><a class="btn" href="https://t.me/+nhIlpiwpNXkxNzVk">Telegram room</a></div>
+  </section>
+</main>
+<footer class="wrap"><span>ALEX.ETH</span><span>@alex_eth17 · t.me/Alex_ethe</span></footer>
+<script>const btn=document.getElementById("theme");btn.onclick=()=>{const l=document.body.dataset.theme==="light";document.body.dataset.theme=l?"":"light";btn.textContent=l?"Light":"Dark";};</script>
+</body>
+</html>
